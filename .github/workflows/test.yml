@@ -22,7 +22,7 @@ jobs:
               run: |
                 node --version
                 # echo "${{ toJson(github) }}"
-                echo "${{github.repository_owner}}"
+                echo "Owner = ${{github.repository_owner}}"
     deploy:
         runs-on: ubuntu-latest
         needs: test

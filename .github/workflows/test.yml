@@ -21,7 +21,8 @@ jobs:
             - name: Printing Data 
               run: |
                 node --version
-                echo "${{ toJson(github) }}"
+                # echo "${{ toJson(github) }}"
+                echo "${{github.repository_owner}}"
     deploy:
         runs-on: ubuntu-latest
         needs: test
